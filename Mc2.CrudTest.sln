@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Shared", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Api", "src\Mc2.CrudTest.Api\Mc2.CrudTest.Api.csproj", "{452D441E-6AD6-4134-842C-768F953E04AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Abstractions", "src\Mc2.CrudTest.Abstractions\Mc2.CrudTest.Abstractions.csproj", "{3740187C-F355-4670-8B75-9C90F6D9577C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Shared.Abstractions", "src\Mc2.CrudTest.Shared.Abstractions\Mc2.CrudTest.Shared.Abstractions.csproj", "{3740187C-F355-4670-8B75-9C90F6D9577C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.AcceptanceTests", "test\Mc2.CrudTest.AcceptanceTests\Mc2.CrudTest.AcceptanceTests.csproj", "{6776DF76-1054-486C-A79A-57100C47032F}"
 EndProject
