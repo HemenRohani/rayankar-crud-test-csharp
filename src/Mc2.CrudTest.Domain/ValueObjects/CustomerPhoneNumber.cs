@@ -11,7 +11,6 @@ public record CustomerPhoneNumber
         {
             throw new InvalidCustomerPhoneNumberException();
         }
-
         Value = value;
     }
 
