@@ -1,6 +1,6 @@
 ﻿using Mc2.CrudTest.Shared.Abstractions.Exceptions;
 
-namespace Final_SophieTravelManagement.Application.Exceptions;
+namespace Mc2.CrudTest.Application.Exceptions;
 
 public class CustomerNotFound : CustomerException
 {

@@ -15,7 +15,7 @@ internal sealed class WriteConfiguration : IEntityTypeConfiguration<Customer>
             .Property(pl => pl.Id)
             .HasConversion(id => id.Value, id => new CustomerId(id));
 
-        builder.ToTable("TravelerCheckList");
+        builder.ToTable("Customer");
     }
 }
 
