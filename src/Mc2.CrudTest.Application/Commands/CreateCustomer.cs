@@ -6,7 +6,7 @@ public record CreateCustomer(
     Guid Id,
     string Firstname,
     string Lastname,
-    DateOnly DateOfBirth,
+    DateTime DateOfBirth,
     string PhoneNumber,
     string Email,
     string BankAccountNumber) : ICommand;

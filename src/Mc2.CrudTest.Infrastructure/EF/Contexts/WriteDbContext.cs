@@ -23,7 +23,7 @@ namespace Mc2.CrudTest.Infrastructure.EF.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("Customer");
+            modelBuilder.HasDefaultSchema("Mc2CrudTest");
 
             var configuration = new WriteConfiguration();
             modelBuilder.ApplyConfiguration<Customer>(configuration);

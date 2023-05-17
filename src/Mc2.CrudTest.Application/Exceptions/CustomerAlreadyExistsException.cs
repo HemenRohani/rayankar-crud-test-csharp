@@ -6,9 +6,9 @@ public class CustomerAlreadyExistsException : CustomerException
 {
     public string Firstname { get; }
     public string Lastname { get; }
-    public DateOnly DateOfBirth { get; }
+    public DateTime DateOfBirth { get; }
 
-    public CustomerAlreadyExistsException(string firstname, string lastname, DateOnly dateOfBirth)
+    public CustomerAlreadyExistsException(string firstname, string lastname, DateTime dateOfBirth)
         : base($"Customer with (Firstname :'{firstname}', Lastname : '{lastname}', DateOfBirth : '{dateOfBirth}') already exists.")
     {
         Firstname = firstname;

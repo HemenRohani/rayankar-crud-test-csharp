@@ -7,14 +7,14 @@ public record CustomerPhoneNumber
     public CustomerPhoneNumber(string value)
     {
 
-        if (ValidateNumber(value))
+        if (IsValidNumber(value) is false)
         {
             throw new InvalidCustomerPhoneNumberException();
         }
         Value = value;
     }
 
-    private bool ValidateNumber(string number) =>
+    private bool IsValidNumber(string number) =>
         PhoneNumbers.PhoneNumberUtil.GetInstance().IsPossibleNumber(number, "");
 
     public static implicit operator string(CustomerPhoneNumber id)

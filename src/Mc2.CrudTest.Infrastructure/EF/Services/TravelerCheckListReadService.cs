@@ -14,7 +14,7 @@ internal sealed class CustomerReadService : ICustomerReadService
     public Task<bool> ExistsByEmailAsync(string email)
         => _Customer.AnyAsync(pl => pl.Email == email);
 
-    public Task<bool> ExistsByNameAndBithDateAsync(string firstname, string lastname, DateOnly dateOfBirth)
+    public Task<bool> ExistsByNameAndBithDateAsync(string firstname, string lastname, DateTime dateOfBirth)
         => _Customer.AnyAsync(pl => pl.Firstname == firstname && pl.Lastname == lastname && pl.DateOfBirth == dateOfBirth);
 
 }
