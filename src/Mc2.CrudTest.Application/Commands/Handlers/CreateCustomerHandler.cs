@@ -27,8 +27,12 @@ public class CreateCustomerHandler : ICommandHandler<CreateCustomer>
     {
         var (id, firstname, lastname, dateOfBirth, phoneNumber, email, bankAccountNumber) = command;
 
+        if (await _readService.ExistsByEmailAsync(email))
+        {
+            throw new EmailAlreadyUsedException(email);
+        }
 
-        if (await _readService.ExistsAsync(firstname, lastname, dateOfBirth))
+        if (await _readService.ExistsByNameAndBithDateAsync(firstname, lastname, dateOfBirth))
         {
             throw new CustomerAlreadyExistsException(firstname, lastname, dateOfBirth);
         }

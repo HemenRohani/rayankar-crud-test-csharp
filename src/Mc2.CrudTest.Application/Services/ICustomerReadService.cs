@@ -2,6 +2,7 @@ namespace Mc2.CrudTest.Application.Services
 {
     public interface ICustomerReadService
     {
-        Task<bool> ExistsAsync(string firstname, string lastname, DateOnly dateOfBirth);
+        Task<bool> ExistsByEmailAsync(string email);
+        Task<bool> ExistsByNameAndBithDateAsync(string firstname, string lastname, DateOnly dateOfBirth);
     }
 }

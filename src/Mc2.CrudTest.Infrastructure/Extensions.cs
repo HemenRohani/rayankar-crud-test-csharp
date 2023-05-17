@@ -1,6 +1,5 @@
 ﻿using Mc2.CrudTest.Application.Services;
 using Mc2.CrudTest.Infrastructure.EF;
-using Mc2.CrudTest.Infrastructure.Services;
 using Mc2.CrudTest.Shared.Abstractions.Commands;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
