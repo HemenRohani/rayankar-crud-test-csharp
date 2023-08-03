@@ -5,17 +5,19 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Application", "src\Mc2.CrudTest.Application\Mc2.CrudTest.Application.csproj", "{2D09497A-2042-4049-B8D8-D088C49E270D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Application", "src\Mc2.CrudTest.Application\Mc2.CrudTest.Application.csproj", "{2D09497A-2042-4049-B8D8-D088C49E270D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Infrastructure", "src\Mc2.CrudTest.Infrastructure\Mc2.CrudTest.Infrastructure.csproj", "{13F67ABA-258F-46B9-9E54-8951B8A2488B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Infrastructure", "src\Mc2.CrudTest.Infrastructure\Mc2.CrudTest.Infrastructure.csproj", "{13F67ABA-258F-46B9-9E54-8951B8A2488B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Shared", "src\Mc2.CrudTest.Shared\Mc2.CrudTest.Shared.csproj", "{EC28D387-8FB4-4272-8D5C-6335383D37FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Shared", "src\Mc2.CrudTest.Shared\Mc2.CrudTest.Shared.csproj", "{EC28D387-8FB4-4272-8D5C-6335383D37FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Shared.Abstractions", "src\Mc2.CrudTest.Shared.Abstractions\Mc2.CrudTest.Shared.Abstractions.csproj", "{3740187C-F355-4670-8B75-9C90F6D9577C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Shared.Abstractions", "src\Mc2.CrudTest.Shared.Abstractions\Mc2.CrudTest.Shared.Abstractions.csproj", "{3740187C-F355-4670-8B75-9C90F6D9577C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.AcceptanceTests", "test\Mc2.CrudTest.AcceptanceTests\Mc2.CrudTest.AcceptanceTests.csproj", "{6776DF76-1054-486C-A79A-57100C47032F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.AcceptanceTests", "test\Mc2.CrudTest.AcceptanceTests\Mc2.CrudTest.AcceptanceTests.csproj", "{6776DF76-1054-486C-A79A-57100C47032F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Api", "src\Mc2.CrudTest.Api\Mc2.CrudTest.Api.csproj", "{BC732618-A759-4303-A9D9-9ED682612D70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Api", "src\Mc2.CrudTest.Api\Mc2.CrudTest.Api.csproj", "{BC732618-A759-4303-A9D9-9ED682612D70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Domain", "src\Mc2.CrudTest.Domain\Mc2.CrudTest.Domain.csproj", "{A2DB98AF-090D-4ABE-885B-2A3C1431A678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,22 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D2AD2F7D-C1E0-4C84-A2A4-6900CED15599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2AD2F7D-C1E0-4C84-A2A4-6900CED15599}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2AD2F7D-C1E0-4C84-A2A4-6900CED15599}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2AD2F7D-C1E0-4C84-A2A4-6900CED15599}.Release|Any CPU.Build.0 = Release|Any CPU
-		{817C1B83-0CAC-4345-A0BE-5CCF30B15C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{817C1B83-0CAC-4345-A0BE-5CCF30B15C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{817C1B83-0CAC-4345-A0BE-5CCF30B15C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{817C1B83-0CAC-4345-A0BE-5CCF30B15C26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6F1EC1A-CE1D-4E6D-B61D-07033DD442BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6F1EC1A-CE1D-4E6D-B61D-07033DD442BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6F1EC1A-CE1D-4E6D-B61D-07033DD442BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6F1EC1A-CE1D-4E6D-B61D-07033DD442BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6776DF76-1054-486C-A79A-57100C47032F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6776DF76-1054-486C-A79A-57100C47032F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6776DF76-1054-486C-A79A-57100C47032F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6776DF76-1054-486C-A79A-57100C47032F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D09497A-2042-4049-B8D8-D088C49E270D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D09497A-2042-4049-B8D8-D088C49E270D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D09497A-2042-4049-B8D8-D088C49E270D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,16 +41,21 @@ Global
 		{3740187C-F355-4670-8B75-9C90F6D9577C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3740187C-F355-4670-8B75-9C90F6D9577C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3740187C-F355-4670-8B75-9C90F6D9577C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6776DF76-1054-486C-A79A-57100C47032F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6776DF76-1054-486C-A79A-57100C47032F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6776DF76-1054-486C-A79A-57100C47032F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6776DF76-1054-486C-A79A-57100C47032F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC732618-A759-4303-A9D9-9ED682612D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC732618-A759-4303-A9D9-9ED682612D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC732618-A759-4303-A9D9-9ED682612D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC732618-A759-4303-A9D9-9ED682612D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DB98AF-090D-4ABE-885B-2A3C1431A678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DB98AF-090D-4ABE-885B-2A3C1431A678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DB98AF-090D-4ABE-885B-2A3C1431A678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DB98AF-090D-4ABE-885B-2A3C1431A678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4B5A26C9-68C1-49D9-9F32-AF907A1730C2}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2D09497A-2042-4049-B8D8-D088C49E270D} = {5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}
@@ -72,5 +63,9 @@ Global
 		{EC28D387-8FB4-4272-8D5C-6335383D37FF} = {5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}
 		{3740187C-F355-4670-8B75-9C90F6D9577C} = {5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}
 		{BC732618-A759-4303-A9D9-9ED682612D70} = {5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}
+		{A2DB98AF-090D-4ABE-885B-2A3C1431A678} = {5DA6B83E-9906-483B-B9EC-8E3FD5BBCB3A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B5A26C9-68C1-49D9-9F32-AF907A1730C2}
 	EndGlobalSection
 EndGlobal
