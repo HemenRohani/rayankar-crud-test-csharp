@@ -2,6 +2,7 @@
 using Mc2.CrudTest.Domain.Entities;
 using Mc2.CrudTest.Domain.Exception;
 using Mc2.CrudTest.Domain.Factories;
+using Mc2.CrudTest.Domain.ValueObjects;
 using Shouldly;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,42 @@ namespace Mc2.CrudTest.AcceptanceTests.Domain
         public CustomerTests()
         {
             _factory = new CustomerFactory();
+        }
+
+        [Theory]
+        [InlineData("+989186646493", null)]
+        [InlineData("+988733730520", typeof(InvalidCustomerPhoneNumberException))]
+        public void Throws_InvalidNumber_For_LineNumber_with_Parametrs(string number, Type exeptionType)
+        {
+            var exception = Record.Exception(() => new CustomerPhoneNumber(number));
+
+            //ASSERT
+            if(exeptionType == null)
+            {
+                exception.ShouldBeNull();
+            }
+            else
+            {
+                exception.ShouldNotBeNull();
+                exception.ShouldBeOfType(exeptionType);
+            }
+        }
+
+        [Fact]
+        public void Throws_InvalidNumber_For_LineNumber()
+        {
+            var exception = Record.Exception(() => _factory.Create(
+                Guid.NewGuid(),
+                firstname: "Hemen",
+                lastname: "Rohani",
+                dateOfBirth: new DateTime(1988, 10, 13),
+                phoneNumber: "+982188776655",
+                email: "hemen.rohani@outlook.com",
+                bankAccountNumber: "0123456"));
+
+            //ASSERT
+            exception.ShouldNotBeNull();
+            exception.ShouldBeOfType<InvalidCustomerPhoneNumberException>();
         }
 
         [Fact]
